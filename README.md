@@ -69,7 +69,7 @@
          </div>
          <br />
          <div id="question6">
-          <div class="question">?</div>
+          <div class="question">4 << 2 = ...</div>
           <input type="radio" name="queston6" value="a">
           <label>16</label>
           <input type="radio" name="queston6" value="b">
@@ -80,6 +80,29 @@
           <label>8</label>
          </div>
          <br />
+         <div id="question7">
+          <div class="question">Given the lengths of two sides of s right triangle (one with a 90 degree angle), how  would you find the hypotenuse</div>
+          <input type="radio" name="queston7" value="a">
+          <label>Pi*Radius^2</label>
+          <input type="radio" name="queston7" value="b">
+          <label>Pythagorean Theorm</label>
+          <input type="radio" name="queston7" value="c">
+          <label>Calculator</label>
+          <input type="radio" name="queston7" value="d">
+          <label>Sin(side1 + sides2)</label>
+         </div>
+         <br />
+         <div id="question8">
+          <div class="question">Using a server can help you to...</div>
+          <input type="radio" name="queston8" value="a">
+          <label>hide your code.</label>
+          <input type="radio" name="queston8" value="b">
+          <label>have a performant game.</label>
+          <input type="radio" name="queston8" value="c">
+          <label>create shared experinces for players.</label>
+          <input type="radio" name="queston8" value="d">
+          <label>all of the above.</label>
+        </div>
       </div>
     </body>
     </html>   
