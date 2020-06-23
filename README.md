@@ -4,8 +4,68 @@
       <meta charset="utf-8">
       <title> Quiz </title>
       <link rel="stylesheet" type+"text/css" href="main.css">
+      <style>
+        #quiz{
+          display:none;
+        }
+        body{
+          margin-left:50px;
+        }
+        #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8{
+          display:none;
+        }
+        canvas{
+          display:none;
+        }
+        .correct{
+          background-color:#24399f;
+          color:white;
+        }
+        if(jQuery){
+          var checkAnswers = function(){
+            var answerString = "";
+            var answers = $(":checked");
+            answers.each(function(i){
+              answerString = answerString + answers[i].value;
+            });
+            $(":checked").each(function(i) {
+              var answerString = answerString + answers[i].value;
+            });
+            checkIfCorrect(answerString);
+          };
+          var checkIfCorrect = function(theString){
+            if(parseInt(theString, 16) === 811124566973){
+              $("body").addClass("correct");
+              $("h1").text("You Win!!!");
+              $("canvas").show();
+            }
+          };
+          $("#question1").show();
+        }
+        if(impress){
+          $("#question2").show();
+        }
+        if(atom){
+          $("#question3").show();
+        }
+        if(createjs){
+          $("#question4").show();
+        }
+        if(me){
+          $("#question5").show();
+        }
+        if(require){
+          $("#question6").show();
+        }
+        if($().playground){
+          $("#question7").show();
+        }
+        if(jaws){
+          $("#question8").show();
+        }
+      </style>
     </head>
-    <body>
+    <body onclick="checkAnswers();">
       <h1>Quiz</h1>
       <div id="quiz">
         <div id="question1">
@@ -104,5 +164,16 @@
           <label>all of the above.</label>
         </div>
       </div>
+      <script src="jquery.js"></script>
+      <script src="impress.js"></script>
+      <!-- atom needs this to run -->
+      <canvas></canvas>
+      <script src="atom.js"></script>
+      <script src="easel.js"></script>
+      <script src="melon.js"></script>
+      <script src="yabble.js"></script>
+      <script src="jquery.gamequery.js"></script>
+      <script src="jaws.js"></script>
+      <script src="game.js"></script>
     </body>
     </html>   
