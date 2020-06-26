@@ -11,7 +11,7 @@
         body{
           margin-left:50px;
         }
-        #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8{
+        #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10{
           display:none;
         }
         canvas{
@@ -63,6 +63,12 @@
         if(jaws){
           $("#question8").show();
         }
+        if(enchant){
+          $("#question9").show;
+        }
+        if(crafty){
+          $("#question10").show;
+        }
       </style>
     </head>
     <body onclick="checkAnswers();">
@@ -105,62 +111,82 @@
          </div>
          <br />
          <div id="question4">
-          <div class="question">The gravitational constant on the Earth is approximately?</div>
+          <div class="question">In Japanese "カ" is pronounced...</div>
           <input type="radio" name="queston4" value="a">
-          <label>10m/s^2</label>
+          <label>ka</label>
           <input type="radio" name="queston4" value="b">
-          <label>.809m/s^2</label>
+          <label>ko</label>
           <input type="radio" name="queston4" value="c">
-          <label>9.81m/s^2</label>
+          <label>ke</label>
           <input type="radio" name="queston4" value="d">
+          <label>ki</label>
+         </div>
+         <br />
+        <div id="question5">
+          <div class="question">The gravitational constant on the Earth is approximately?</div>
+          <input type="radio" name="queston5" value="a">
+          <label>10m/s^2</label>
+          <input type="radio" name="queston5" value="b">
+          <label>.809m/s^2</label>
+          <input type="radio" name="queston5" value="c">
+          <label>9.81m/s^2</label>
+          <input type="radio" name="queston5" value="d">
           <label>84.4m/s^2</label>
          </div>
          <br />
-         <div id="question5">
+         <div id="question6">
           <div class="question">45 (in base 10) is what in binary (base 2)?</div>
-          <input type="radio" name="queston5" value="a">
+          <input type="radio" name="queston6" value="a">
           <label>101101</label>
-          <input type="radio" name="queston5" value="b">
+          <input type="radio" name="queston6" value="b">
           <label>110011</label>
-          <input type="radio" name="queston5" value="c">
+          <input type="radio" name="questo6" value="c">
           <label>011101</label>
-          <input type="radio" name="queston5" value="d">
+          <input type="radio" name="queston6" value="d">
           <label>101011</label>
          </div>
          <br />
-         <div id="question6">
+         <div id="question7">
           <div class="question">4 << 2 = ...</div>
-          <input type="radio" name="queston6" value="a">
+          <input type="radio" name="queston7" value="a">
           <label>16</label>
-          <input type="radio" name="queston6" value="b">
+          <input type="radio" name="queston7" value="b">
           <label>4</label>
-          <input type="radio" name="queston6" value="c">
+          <input type="radio" name="queston7" value="c">
           <label>2</label>
-          <input type="radio" name="queston6" value="d">
+          <input type="radio" name="queston7" value="d">
           <label>8</label>
          </div>
          <br />
-         <div id="question7">
+         <div id="question8">
           <div class="question">Given the lengths of two sides of s right triangle (one with a 90 degree angle), how  would you find the hypotenuse</div>
-          <input type="radio" name="queston7" value="a">
+          <input type="radio" name="queston8" value="a">
           <label>Pi*Radius^2</label>
-          <input type="radio" name="queston7" value="b">
+          <input type="radio" name="queston8" value="b">
           <label>Pythagorean Theorm</label>
-          <input type="radio" name="queston7" value="c">
+          <input type="radio" name="queston8" value="c">
           <label>Calculator</label>
-          <input type="radio" name="queston7" value="d">
+          <input type="radio" name="queston8" value="d">
           <label>Sin(side1 + sides2)</label>
          </div>
          <br />
-         <div id="question8">
+        <div id="question9">
+          <div class="question">Ture or false: All games must run at atleast 60 frmes per secound to be any good</div>
+          <input type="radio" name="queston9" value="a">
+          <label>True</label>
+          <input type="radio" name="queston9" value="b">
+          <label>True</labe>
+        </div>
+         <br />
+         <div id="question10">
           <div class="question">Using a server can help you to...</div>
-          <input type="radio" name="queston8" value="a">
+          <input type="radio" name="queston10" value="a">
           <label>hide your code.</label>
-          <input type="radio" name="queston8" value="b">
+          <input type="radio" name="queston10" value="b">
           <label>have a performant game.</label>
-          <input type="radio" name="queston8" value="c">
+          <input type="radio" name="queston10" value="c">
           <label>create shared experinces for players.</label>
-          <input type="radio" name="queston8" value="d">
+          <input type="radio" name="queston10" value="d">
           <label>all of the above.</label>
         </div>
       </div>
@@ -174,6 +200,8 @@
       <script src="yabble.js"></script>
       <script src="jquery.gamequery.js"></script>
       <script src="jaws.js"></script>
+      <script src="enchant.js"></script>
+      <script src="crafty.js"></script>
       <script src="game.js"></script>
     </body>
     </html>   
